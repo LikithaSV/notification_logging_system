@@ -3,9 +3,9 @@
 #### Please follow the following steps to setup the sample app:
 
 ```
-git clone git@gitlab.com:1mgOfficial/torpedo_boilerplate.git
+git clone git@bitbucket.org:tata1mg/torpedo_boilerplate.git
 cd torpedo_boilerplate
-pyenv virtualenv 3.7.2 torpedo_boilerplate
+pyenv virtualenv 3.8.15 torpedo_boilerplate
 touch config.json
 ```
 * copy config from config_template.json.
@@ -24,7 +24,7 @@ touch config.json
 1. hello world
 ```
 curl --request GET \
-  --url http://0.0.0.0:6561/v4/hello/ajay
+  --url http://0.0.0.0:6561/v4/hello/<name>
 ```
 
 2. get user

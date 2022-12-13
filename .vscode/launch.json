@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Docker: Python - General",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "python": {
+                "pathMappings": [
+                    {
+                        "localRoot": "${workspaceFolder}",
+                        "remoteRoot": "/opt/1mg/torpedo_boilerplate"
+                    }
+                ],
+                "projectType": "general"
+            }
+        }
+    ]
+}

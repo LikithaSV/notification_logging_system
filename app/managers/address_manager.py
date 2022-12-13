@@ -1,7 +1,7 @@
 from torpedo import Task, TaskExecutor
 from torpedo.exceptions import BadRequestException
 
-from ..service_clients import AddressClient
+from app.service_clients import AddressClient
 
 
 class AddressManager:

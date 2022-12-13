@@ -1,7 +1,7 @@
 from sanic import Blueprint
 from torpedo import send_response
 
-from ..managers import UserManager
+from app.managers import UserManager
 
 basic_with_db_cache = Blueprint("basic_with_db_cache", version=4)
 

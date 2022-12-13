@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "docker-build",
+      "label": "docker-build",
+      "platform": "python",
+      "dockerBuild": {
+        "tag": "torpedo_boilerplate:latest",
+        "dockerfile": "${workspaceFolder}/Dockerfile",
+        "context": "${workspaceFolder}",
+        "pull": false,
+        "buildArgs": {
+          "SERVICE_NAME": "torpedo_boilerplate",
+          "SSH_PUBLIC_KEY": "$(cat ~/.ssh/id_ed25519.pub)",
+          "SSH_PRIVATE_KEY": "$(cat ~/.ssh/id_ed25519)"
+        }
+      }
+    },
+    {
+      "type": "docker-run",
+      "label": "docker-run: debug",
+      "dependsOn": [
+        "docker-build"
+      ],
+      "python": {
+        "module": "app.service"
+      },
+      "dockerRun": {
+        "portsPublishAll": true,
+        "ports": [
+          {
+            "hostPort": 6561,
+            "containerPort": 6561
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 from torpedo.exceptions import BadRequestException
-from torpedo.wrappers import ORMWrapper
+from tortoise_wrapper.wrappers.db_wrapper import ORMWrapper
 
-from ..caches import UserCache
-from ..models import User
+from app.caches import UserCache
+from app.models import User
 
 
 class UserManager:
