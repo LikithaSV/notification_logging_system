@@ -12,9 +12,6 @@ pytest-sanic = "<1.10.0,>=1.9.1"
 pytest-cov = "<3.1.0,>=3.0.0"
 
 [dev-packages]
-cqa = {ref = "v0.1", git = "ssh://git@bitbucket.org/tata1mg/cqa.git"}
-flake8 = "4.0.1"
-black = "22.3.0"
 
 [requires]
 python_version = "3.8"
