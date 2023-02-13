@@ -6,7 +6,7 @@ from torpedo.exceptions import BadRequestException
 from tortoise_wrapper.wrappers.db_wrapper import ORMWrapper
 
 from app.caches import UserCache
-from app.managers import UserManager
+from app.services import UserManager
 
 
 class UserManagerTest(asynctest.TestCase):
