@@ -65,3 +65,5 @@ target/
 config_log.json
 .DS_Store
 newrelic.ini
+
+myenv/
