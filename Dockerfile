@@ -51,3 +51,8 @@ RUN pip install click==8.1.3
 
 # Copy code folder
 COPY . .
+
+EXPOSE 6561
+EXPOSE 5432
+
+CMD [ "python3", "-m", "app.service"]
