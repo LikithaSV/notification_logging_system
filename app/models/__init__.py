@@ -1,3 +1,3 @@
-__all__ = [Notification]
+__all__ = ["Notification"]
 
 from app.models.Notification import Notification
