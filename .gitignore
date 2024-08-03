@@ -67,3 +67,6 @@ config_log.json
 newrelic.ini
 
 baelish
+myenv
+
+config/

@@ -1,3 +1,3 @@
-__all__ = ["User"]
+__all__ = [Notification]
 
-from app.models.db.user import User
+from app.models.Notification import Notification
